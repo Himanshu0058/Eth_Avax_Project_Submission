@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts/Assessment.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> Assessment.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+&nbsp;
+pragma solidity ^0.8.9;
+&nbsp;
+contract Assessment {
+&nbsp;
+    address payable public owner;
+    uint256 public balance;
+    
+    mapping(address =&gt; uint256) public lockedTokens;
+&nbsp;
+    event Deposit(uint256 amount);
+    event Withdraw(uint256 amount);
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    event TokensLocked(address indexed to, uint256 amount);
+    event TokensUnlocked(address indexed to, uint256 amount);
+&nbsp;
+<span class="fstat-no" title="function not covered" >    constructor(uint256 initBalance) {</span>
+        owner = payable(msg.sender);
+        balance = initBalance;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getBalance() public view returns (uint256) {</span>
+<span class="cstat-no" title="statement not covered" >        return balance;</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function deposit(uint256 _amount) public payable {</span>
+<span class="cstat-no" title="statement not covered" >        require(msg.sender == owner, "not owner of this contract")</span>;
+        balance += _amount;
+<span class="cstat-no" title="statement not covered" >        emit Deposit(_amount);</span>
+    }
+&nbsp;
+    error InsufficientBalance(uint256 balance, uint256 withdrawAmount);
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function withdraw(uint256 _withdrawAmount) public {</span>
+<span class="cstat-no" title="statement not covered" >        require(msg.sender == owner, "not owner of this contract")</span>;
+<span class="cstat-no" title="statement not covered" >        if (balance &lt; _withdrawAmount) {</span>
+            revert InsufficientBalance({balance: balance, withdrawAmount: _withdrawAmount});
+        }
+        balance -= _withdrawAmount;
+<span class="cstat-no" title="statement not covered" >        emit Withdraw(_withdrawAmount);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function isOwner(address _address) public view returns (bool) {</span>
+<span class="cstat-no" title="statement not covered" >        return _address == owner;</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function transferOwnership(address payable _newOwner) public {</span>
+    
+<span class="cstat-no" title="statement not covered" >        require(msg.sender == owner, "not owner of this contract")</span>;
+<span class="cstat-no" title="statement not covered" >        require(_newOwner != address(0), "Invalid new owner address")</span>;
+<span class="cstat-no" title="statement not covered" >        address payable _previousOwner = owner;</span>
+        owner = _newOwner;
+<span class="cstat-no" title="statement not covered" >        emit OwnershipTransferred(_previousOwner, _newOwner);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function lockTokens(uint256 _amount) public {</span>
+<span class="cstat-no" title="statement not covered" >        require(balance &gt;= _amount, "Payment Failed (Due To Low Balance)")</span>;
+        lockedTokens[msg.sender] += _amount;
+        balance -= _amount;
+<span class="cstat-no" title="statement not covered" >        emit TokensLocked(msg.sender, _amount);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function unlockTokens(uint256 _amount) public {</span>
+<span class="cstat-no" title="statement not covered" >        require(lockedTokens[msg.sender] &gt;= _amount, "Payment Failed (Due To Low Balance)")</span>;
+        lockedTokens[msg.sender] -= _amount;
+        balance += _amount;
+<span class="cstat-no" title="statement not covered" >        emit TokensUnlocked(msg.sender, _amount);</span>
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Aug 28 2024 05:54:40 GMT-0400 (Eastern Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
